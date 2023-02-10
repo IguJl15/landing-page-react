@@ -31,9 +31,9 @@ function App() {
   ];
 
   return (
-    <div className="bg">
+    <>
       <CardHolder title={cardHolderTitle} deuses={deuses} />
-    </div>
+    </>
   );
 }
 

@@ -1,10 +1,12 @@
 .card-holder {
-    
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
     border-radius: 8px;
-    background-color: #000000ec;
-
+    background-color: #00000077;
+    
     text-align: center;
+    color: #FFF;
+    overflow: auto;
+    text-shadow: 0 0 3px #000;
 }
 
 .flex-row {
