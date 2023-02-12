@@ -1,19 +1,19 @@
-import Deus from "../../models/Deus";
+import Developer from "../../models/Developer";
 import "./styles/Card.css"
 
 interface CardParam {
-    deus: Deus;
+    deus: Developer;
 }
 
 function Card(param: CardParam) {
     return (
         <div className="card">
             
-            <img src={param.deus.urlImagem} className="card-image"></img>
+            <img src={param.deus.imageUrl} className="card-image"></img>
             <div className="card-details">
-                <h2>{param.deus.nome}</h2>
+                <h2>{param.deus.name}</h2>
                 <p>Hobbies: {param.deus.hobbies.join(", ")}</p>
-                <p>Habilidades: {param.deus.habilidades.join(", ")}</p>
+                <p>Habilidades: {param.deus.habilities.join(", ")}</p>
             </div>
         </div>
     );

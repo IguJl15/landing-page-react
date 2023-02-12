@@ -1,10 +1,10 @@
-import Deus from "../../models/Deus";
+import Developer from "../../models/Developer";
 import Card from "../Card/Card";
 import "./styles/CardHolder.css";
 
 interface CardHolderParam {
   title: string;
-  deuses: Deus[];
+  deuses: Developer[];
 }
 
 function CardHolder(param: CardHolderParam) {

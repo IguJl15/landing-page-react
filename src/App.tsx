@@ -1,7 +1,6 @@
-import { useState } from "react";
 import "./App.css";
 import CardHolder from "./components/CardHolder/CardHolder";
-import Deus from "./models/Deus";
+import Developer from "./models/Developer";
 
 import igor from "./assets/images/igor.jpeg";
 import kaike from "./assets/images/kaike.jpeg";
@@ -9,30 +8,30 @@ import kelson from "./assets/images/kelson.jpeg";
 
 function App() {
   const cardHolderTitle = "Programação para Internet";
-  const deuses = [
-    new Deus(
+  const developers = [
+    new Developer(
       "Igor Julliano",
-      ["Jogar", "programar", "dormir"],
-      ["TypeScript", "Dart", "Flutter", "etc"],
+      ["Jogar", "programar", "cinema", "animes"],
+      ["Dart", "Flutter", "git", "linux", "Jogos", "C#", "DotNet", "inglês intermediário"],
       igor
     ),
-    new Deus(
+    new Developer(
       "Kelson Eduardo",
-      ["Jogar", "ler", "cinema", "música"],
-      ["JavaScript", "TypeScript", "React", "etc"],
+      ["Jogar", "ler", "cinema", "música", "cozinhar"],
+      ["JavaScript", "TypeScript", "React", "git", "Svelte", "inglês fluente"],
       kelson
     ),
-    new Deus(
+    new Developer(
       "Kaike Dias",
-      ["Malhar", "jogar", "ler", "dormir"],
-      ["Dart", "Flutter", "JavaScript", "etc"],
+      ["Corrida", "jogar", "ler", "música"],
+      ["Dart", "Flutter", "JavaScript", "git", "inglês"],
       kaike
     ),
   ];
 
   return (
     <>
-      <CardHolder title={cardHolderTitle} deuses={deuses} />
+      <CardHolder title={cardHolderTitle} deuses={developers} />
     </>
   );
 }
