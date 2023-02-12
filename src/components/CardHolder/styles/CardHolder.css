@@ -7,6 +7,8 @@
     color: #FFF;
     overflow: auto;
     text-shadow: 0 0 7px #000;
+
+    border: 2px solid #ffd90079;
 }
 
 .flex-row {
