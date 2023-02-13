@@ -8,7 +8,6 @@ interface CardParam {
 function Card(param: CardParam) {
     return (
         <div className="card">
-            
             <img src={param.deus.imageUrl} className="card-image"></img>
             <div className="card-details">
                 <h2>{param.deus.name}</h2>
